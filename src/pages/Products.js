@@ -7,7 +7,6 @@ const Products = () => {
       <div className="products-page">
         <Banner />
         <ProductList />
-        Products Page
       </div>
     );
   };

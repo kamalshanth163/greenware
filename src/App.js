@@ -7,18 +7,20 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Footer from './components/Footer';
+import ProductView from './pages/ProductView';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <Routes>         
+        <Routes>
           <Route exact path="/" Component={Products} />
           <Route path="/cart" Component={Cart} />
+          <Route path="/products/id" Component={ProductView} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }
