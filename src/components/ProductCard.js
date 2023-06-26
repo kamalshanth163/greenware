@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({ imageSrc, productName, price }) => {
+const ProductCard = ({ id, imageSrc, productName, price }) => {
 
     const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const ProductCard = ({ imageSrc, productName, price }) => {
             </div>
           </div>
           <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={() => navigate("/products/id")}>View</a></div>
+            <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={() => navigate("/products/" + id)}>View</a></div>
           </div>
         </div>
       </div>

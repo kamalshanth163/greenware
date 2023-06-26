@@ -9,6 +9,7 @@ const ProductList = () => {
           <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             {/* Product Card 1 */}
             <ProductCard
+              id="1"
               imageSrc="path/to/product1.jpg"
               productName="Product 1"
               price="$19.99"
@@ -16,6 +17,7 @@ const ProductList = () => {
   
             {/* Product Card 2 */}
             <ProductCard
+              id="2"
               imageSrc="path/to/product2.jpg"
               productName="Product 2"
               price="$24.99"
