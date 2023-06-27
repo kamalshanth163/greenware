@@ -18,8 +18,8 @@ function App() {
           <Routes>
             <Route exact path="/" Component={Products} />
             <Route path="/products" Component={Products} />
-            <Route path="/cart" Component={Cart} />
             <Route path="/products/:id" Component={ProductView} />
+            <Route path="/cart" Component={Cart} />
           </Routes>
         </div>
         <Footer />
