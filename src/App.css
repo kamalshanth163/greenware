@@ -1,3 +1,19 @@
 .body {
   height: 100vh;
 }
+
+.product-options {
+  margin-bottom: 20px;
+}
+
+.product-options .old-price {
+  margin: 0px 20px;
+  text-decoration: line-through;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.product-options .current-price {
+  margin: 0px 20px;
+  font-size: 20px;
+}

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ProductCard = ({ product, currency }) => {
 
   const navigate = useNavigate();
-  const { sku, image, name, models } = product;
+  const { sku, image, name, options } = product;
 
   return (
     <div className="col mb-5">
@@ -13,7 +13,7 @@ const ProductCard = ({ product, currency }) => {
         <div className="card-body p-4">
           <div className="text-center">
             <h5 className="fw-bolder">{name}</h5>
-            <span>{currency} {models[0].price}</span>
+            <span>{currency} {options[0].price.toFixed(2)}</span>
           </div>
         </div>
         <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
